@@ -15,6 +15,8 @@ Notes.get('/' , (req, res) => {
 // post request to /api/notes should recieve a new note to save on the request body, add it to the db.json file, and then return the new note to the client
 Notes.post('/', (req, res) => {
     const newNote = req.body;
+    console.log("****************")
+    console.log(req.body);
     newNote.id = uniqid();
     fs.readFile('./db/db.json', 'utf8', (err, data) => {
         if (err) throw err;
