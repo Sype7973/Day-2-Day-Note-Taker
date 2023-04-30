@@ -30,20 +30,6 @@ app.get('/notes', (req, res) => {
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, './public/index.html'));
 });
-// Append DB file
-
-
-// delete request
-app.delete('/api/notes/:id', (req, res) => {
-    // read the db.json file
-    const db = JSON.parse(fs.readFileSync('./db/db.json', 'utf8'));
-    // filter out the note with the id that was passed in the url
-    const newDb = db.filter((note) => note.id !== req.params.id);
-    // write the new db.json file
-    fs.writeFileSync('./db/db.json', JSON.stringify(newDb));
-    // send the new db.json file back to the client
-    res.json(newDb);
-});
 
 // host local port and deploy to heroku
 app.listen(PORT, () => {
