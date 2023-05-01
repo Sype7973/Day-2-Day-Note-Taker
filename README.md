@@ -12,17 +12,26 @@ Provide a short description explaining the what, why, and how of your project. U
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+You can either download the public github repo to have the Note Taker on your local system; or follow the link below to be provided the Heroku deployed application:
+
+https://day-2-day-note-taker.herokuapp.com/
+
+Once you arrive on the landing page, you can just hit the "get started" button to start your note taking.
+
+
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+To create a new note, press the "+" symbol at the top right of the page.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+To save a note, press the save icon on the top right of the page
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+To delete a note, press the trash icon on the right of each note
+
+Below is a screenshot to the application in function. 
+
+![Note-taker Screencap](/img/Screencap.PNG)
+
 
 
 ## Badges
@@ -31,3 +40,5 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
 
+
+Thank you!
