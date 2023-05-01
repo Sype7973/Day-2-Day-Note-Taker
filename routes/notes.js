@@ -1,6 +1,7 @@
-
+// import express router
+// import fs
+// import uniqid
 const fs = require('fs');
-
 const uniqid = require('uniqid');
 const Notes = require('express').Router();
 
@@ -32,7 +33,6 @@ Notes.post('/', (req, res) => {
 });
 
 // delete request to /api/notes/:id should recieve a query parameter containing the id of a note to delete
-// this means you'll need to find a way to give each note a unique id when it's saved
 // in order to delete a note, you'll need to read all notes from the db.json file, remove the note with the given id property, and then rewrite the notes to the db.json file
 Notes.delete('/:id', (req, res) => {
     const id = req.params.id;
